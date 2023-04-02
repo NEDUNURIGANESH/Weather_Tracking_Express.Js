@@ -14,7 +14,6 @@ app.post("/",(req,res)=>{
     const unit="metric";
     const url="https://api.openweathermap.org/data/2.5/forecast?q=" + query +"&appid=" + appKey +"&units=" +unit;
     https.get(url,(response)=>{
-        console.log(response.statusCode);
         response.on("data",(data)=>{
         
             const weatherData=JSON.parse(data);
