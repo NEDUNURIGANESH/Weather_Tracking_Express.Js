@@ -23,7 +23,7 @@ app.post("/",(req,res)=>{
             res.write("<h1>current temperature in "+ query+" is "+temp+" degree celsius</h1>");
             res.write("<h2>weather condition is "+weatherDescription+"</h2>")
             res.write("<img src="+ imageURL +">");
-            //res.write("<h1>current temperature in Hyderabad is "+temp+" degree celsius</h1>");
+            //res.write("<h1>current temperature in "+ query+ " is "+temp+" degree celsius</h1>");
             res.send();
         });
     });
